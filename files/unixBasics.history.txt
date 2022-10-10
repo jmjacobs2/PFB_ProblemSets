@@ -1,16 +1,71 @@
-  238  git commit -m 'removing oops'
-  239  git push
-  240  vi oops2
-  241  git add oops2
-  242  git commit -m 'adding an oops2 file'
-  243  git push
-  244  rm oops2
-  245  git add oops2
-  246  git commit -m 'removing oops2'
-  247  git push
-  248  vi never
-  249  git add never
-  250  git reset never
-  251  ls
-  252  man rm
-  253  man cp
+mv cancer_genes.fasta ./github/cancer_genes.fasta
+cd files
+cd
+cd github
+ls
+mv cancer_genes.fasta ./github/files/cancer_genes.fasta
+mv cancer_genes.fasta ~/github/files/cancer_genes.fasta
+git add files/cancer_genes.fasta
+git push
+git pull
+git add ~/github/files/cancer_genes.fasta
+git commit -m 'adding cancer_genes.fasta'
+git push
+cd files
+vi mysequences.txt
+git add mysequences.txt
+git commit -m 'adding new problem set file'
+git push
+git add ~/github/files/cancer_genes.fasta
+git commit -m 'adding cancer_genes.fasta'
+git push
+mkdir fastas
+cp cancer_genes.fasta ~/fastas/cancer_genes.fasta
+cp cancer_genes.fasta ./fastas/cancer_genes.fasta
+ls
+ls ./fastas
+rm cancer_genes.fasta
+git rm
+touch oops
+git rm oops
+git rm ./oops
+rm oops
+vi oops
+git rm oops
+git add oops
+git commit -m 'adding an oops file'
+git push
+git rm oops
+git commit -m 'removing oops'
+git push
+vi oops2
+git add oops2
+git commit -m 'adding an oops2 file'
+git push
+rm oops2
+git add oops2
+git commit -m 'removing oops2'
+git push
+vi never
+git add never
+git reset never
+ls
+man rm
+man cp
+history > unixBasics.history.txt
+ls
+cat unixBasics.history.txt
+vi unixBasics.history.txt
+git status
+git add unixBasics.history.txt
+git commit -m 'Unix Basics History'
+git push
+history
+man history
+vi unixBasics.history.txt
+man history
+history 200
+history 265 > unixBasics.history.txt
+cat unixBasics.history.txt
+vi unixBasics.history.txt
+history -n 200
