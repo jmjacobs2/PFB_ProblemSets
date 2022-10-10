@@ -1,0 +1,16 @@
+  238  git commit -m 'removing oops'
+  239  git push
+  240  vi oops2
+  241  git add oops2
+  242  git commit -m 'adding an oops2 file'
+  243  git push
+  244  rm oops2
+  245  git add oops2
+  246  git commit -m 'removing oops2'
+  247  git push
+  248  vi never
+  249  git add never
+  250  git reset never
+  251  ls
+  252  man rm
+  253  man cp
