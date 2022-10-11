@@ -1,0 +1,76 @@
+    2  sudo apt-get install sl
+    3  apt-get install sl
+    4  brew install sl
+    5  sl
+    6  clear
+    7  su - zsh
+    8  ssh admin@localhost
+    9  clear
+   10  cd /bin/
+   11  ls
+   12  ls -l
+   13  ls -lt
+   14  python3
+   15  ls
+   16  mkdir python
+   17  rm python
+   18  rm -r python
+   19  mkdir python_day1
+   20  cd python_day1
+   21  ./
+   22  ..
+   23  ../
+   24  cd ../
+   25  rm -r python_day1
+   26  cd problemsets
+   27  vi promblemset2_2
+   28  vi hello.py
+   29  chmod +x hello.py
+   30  ls -l hello.py
+   31  ./hello.py
+   32  cd ../
+   33  cd github
+   34  git add ~/problemsets/hello.py
+   35  cp ~/problemsets/hello.py ~/github/hello.py
+   36  git commit -m "added name to print"
+   37  git add ~/github/hello.py
+   38  git commit -m "added name to print"
+   39  git status
+   40  ../
+   41  cd ../
+   42  problemsets
+   43  cd problemsets
+   44  vi hello.py
+   45  vi hello.py
+   46  ./hello.py
+   47  vi hello.py
+   48  ./hello.py
+   49  vi hello.py
+   50  ./hello.py
+   51  vi hello.py
+   52  vi hello.py
+   53  ./hello.py
+   54  vi hello.py
+   55  ./hello.py
+   56  ./hello.py "Jonathan"
+   57  vi hello.py
+   58  cd ~/
+   59  vi .vimrc
+   60  source .vimrc
+   61  cd problemsets
+   62  vi hello.py
+   63  ./hello.py "Jonathan" "Green" "Scuba Diving" "Sharks"
+   64  cp hello.py ~/github/hello.py
+   65  git add ~/github/hello.py
+   66  cd ~/
+   67  cd github
+   68  git add ~/github/hello.py
+   69  git commit -m "hello.py"
+   70  git push
+   71  vi hello.py
+   72  cd ~/problemsets
+   73  ls
+   74  hello.py
+   75  ./hello.py "Jonathan" "Green" "Scuba Diving" "Sharks"
+   76  history 100
+   77  history -50
