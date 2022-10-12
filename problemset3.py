@@ -75,3 +75,12 @@ print(rc_DNAc)
 #find ECORI
 print(DNA14.find('GAATTC'),'is the location of an EcoRI site and occurs this many times:', DNA14.count('GAATTC'))
 
+#find EcoRI end site
+EcoRI_site = DNA14.find('GAATTC')
+EcoRI_end = EcoRI_site + len('GAATTC')
+EcoRI_number = DNA14.count('GATTC')
+string = "{} is the start location of an EcoRI site, ends at {} and occurs this many times {}.:', DNA14.count('GAATTC')"
+print(string.format(EcoRI_site,EcoRI_end,EcoRI_number))
+print('end 14')
+
+print(DNA14.find('GAATTC'),'is the start location of an EcoRI site, and occurs this many times:', DNA14.count('GAATTC'))
