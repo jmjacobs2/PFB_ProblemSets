@@ -58,21 +58,20 @@ print("wrote 'Michael.txt'")
 #Python_07.fasta
 print(type('Python_07.fasta'))
 fasta_dict = {}
-with open("Python_07.fasta", "r") as fasta:
-  for line in fasta:
+with open("Python_06.fasta", "r") as fasta:
+  for line in fasta: 
+    line = line.rstrip() 
     if line.startswith('>'):
-      header = line
-      fasta_dict[header] = ''
+      header = re.search(r"^>(\S+)", line)
+      print(header.group(1))
     else:
-      seq = line
-      fasta_dict[header] += seq
-print(fasta_dict)
-   # re.sub(''
-   # key =  
-
+      #do something with sequences
 
  #for line in fasta:
    # line = line.
      # print(fasta) #goal is to print locus tag
    # else:
      # print('nada')
+
+
+#
