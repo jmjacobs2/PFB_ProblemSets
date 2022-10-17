@@ -49,8 +49,10 @@ class DNARecord(object):
 
 #output a fasta formatted sequence
   def fasta(self):
-
-
+    sequence_name = '>' + self.gene_name
+    sequence_nt = '\n' +  self.sequence
+    sequence_fasta = sequence_name + sequence_nt  
+    return sequence_fasta
 
 dna_rec_obj_1 = DNARecord('ATGCGTGCATGCAGTGCACATG', 'sequence', 'Unknown organism')
 
@@ -59,4 +61,5 @@ for d in [dna_rec_obj_1]:
   #prints the sequence length11
   print('sequence length is:', dna_rec_obj_1.get_length())
   print('nt composition is:', dna_rec_obj_1.get_nuc_comp())
-  print('nt composition is:', dna_rec_obj_1.get_GC())
+  print('GC content is:', dna_rec_obj_1.get_GC())
+  print('fasta file looks like:'+ '\n', dna_rec_obj_1.fasta(), sep='')
